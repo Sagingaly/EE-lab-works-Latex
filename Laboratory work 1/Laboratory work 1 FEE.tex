@@ -1,0 +1,376 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{afterpage}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \includegraphics[width=12cm]{images/20090516224137!Logotip_KBTU (1).jpg}
+    
+    \vspace{1cm} % Add vertical space
+    
+    % Align the following text to the left
+       \begin{center} % Center the following text
+        Faculty of Information Technology\\
+        Department of Electrical Engineering and Computer Science
+    \end{center}
+    
+    \vfill % Fill the vertical space
+    
+    {\LARGE\bfseries Laboratory Work \#2}\\
+    {\LARGE\bfseries Ohm's law and its applications}
+    
+    \vspace{3cm} % Add vertical space
+    
+    \begin{flushright}
+        Done by: Sagingaly Meldeshuly \\
+        Checked by: Raushan Amanzholova \\
+        September 2023
+    \end{flushright}
+
+    \vfill % Center the page number vertically
+    \begin{center}
+        2023, Almaty
+    \end{center}
+    
+\end{titlepage}
+
+
+
+
+
+% "*" убирает нумерацию в разделе section
+% "$ $" в долларах мы пишем математических операций
+% " \times " это умножение с крестиком
+% P_R_2=$I_R_2 \times V_R_2$
+% \[ numerator and denominator
+%\frac{a}{b}
+%\]
+% power ^
+% \subsection подтопик
+% Omega
+% \\ is used to create a new line or break a line. It's similar to pressing "Enter" or "Return" on your keyboard when you're writing a regular text document.
+\begin{flushleft}
+\textbf{Purpose of the work laboratory work:}
+\end{flushleft}
+\begin{enumerate}
+    \item Start you first project in Ni MultiSim.
+    \item Measure the corresponding voltages,currents and powers for each part of the circuit.
+    \item To investigate the real application of Ohm’s law for basic and complex circuits.
+    \item Be able to draw the V-I characteristics of linear resistors. The measurements of equivalent resistors are verified.
+    \item Current and voltage division rules.
+\end{enumerate}
+
+\begin{flushleft}
+\textbf{Brief theory}
+\end{flushleft}
+
+\begin{enumerate}
+    \item Ohm's law
+    Ohm's Law states that the current (I) flowing through a conductor between two points is directly proportional to the voltage (V) across the two points and inversely proportional to the resistance (R) of the conductor.
+    
+    Formula: \( V = I \times R \)
+    
+    \item Its application
+    Ohm's Law is fundamental in electronics and electrical engineering. It's used to design circuits, troubleshoot problems, and understand the relationship between voltage, current, and resistance in various components and systems. For instance, it helps in determining the resistance required in a circuit to maintain a specific current flow or in predicting the current flow through a resistor given a certain voltage.
+\end{enumerate}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{images/msg1142703066-30551.jpg}
+    \caption{The V-I characteristics of linear resistors [2] } % Add caption if required.
+\end{figure}
+
+\begin{flushleft}
+\noindent \textbf{In-lab tasks}
+\end{flushleft}
+
+
+
+
+\begin{flushleft}
+Task1(\textbf{Voltage, circuit and power measurements}).
+\end{flushleft}
+
+a) 
+\noindent \textbf{Given:} \\
+\( R_1 = 1\text{k\Omega} \) and \( R_2 = 2\text{k\Omega} \) with \( V_s= 5\text{V} \)
+
+\noindent Power calculation in general form: \( P = V \times I \)
+
+For \( R_1 \):
+\[ P_{R_1} = I_{R_1} \times V_{R_1} \]
+
+For \( R_2 \):
+\[ P_{R_2} = I_{R_2} \times V_{R_2} \]
+
+\noindent By Ohm's law:
+\[ I = \frac{V}{R} \]
+
+For \( R_1 \):
+\[ I_1 = \frac{V}{R_1} = \frac{5}{1 \times 10^3} = 5 \times 10^{-3} \]
+
+For \( R_2 \):
+\[ I_2 = \frac{V}{R_2} = \frac{5}{2 \times 10^3} = 2.5 \times 10^{-3} \]
+
+Power consumed by \( R_1 \):
+\[ P_1 = 5 \times 10^{-3} \times 5 = 25 \times 10^{-3} \]
+
+Power consumed by \( R_2 \):
+\[ P_2 = 2.5 \times 10^{-3} \times 5 = 12.5 \times 10^{-3} \]
+
+\begin{flushleft}
+\noindent \textbf{Determination of Active and Passive Elements:}
+\begin{itemize}
+    \item Typically, in basic circuits involving only resistors and sources:
+    \item Voltage sources (like \( V_s \)) are considered active elements because they supply power.
+    \item Resistors (like \( R_1 \) and \( R_2 \)) are considered passive elements because they dissipate or consume power.
+\end{itemize}
+\end{flushleft}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{images/photo1695213527.jpeg}
+    \caption{Task 3 circuit with resistors in series and Task 2 simple circuit with resistors in series for voltage calculation } % Add caption if required.
+\end{figure}
+
+\begin{flushleft}
+b) 
+\noindent \textbf{GIVEN:} \\
+Vs = 12V \\
+R1 = 100k$\Omega$ \\
+R2 = 200k$\Omega$ \\
+R3 = 100k$\Omega$ \\
+R2 and R3 are parallel and R1 is in series with the combination of R2 and R3.
+\end{flushleft}
+
+\noindent Power calculation: 
+\[ P = U \times V \]
+
+\[ P_{R_1} = I_{R_1} \times V_{R_1} \]
+
+\[ P_{R_2} = I_{R_2} \times V_{R_2} \]
+
+\noindent By Ohm's law:
+\[ I = \frac{V}{R} \]
+
+\[ I_1 = \frac{V}{R_1} = \frac{12}{100 \times 10^3} = 0.12 \times 10^{-3} \]
+
+\[ I_2 = \frac{V}{R_2} = \frac{12}{200 \times 10^3} = 0.06 \times 10^{-3} \]
+
+\[ P_1 = 0.12 \times 10^{-3} \times 12 = 1.44 \times 10^{-3} \]
+
+\[ P_2 = 0.06 \times 10^{-3} \times 12 = 0.72 \times 10^{-3} \]
+\begin{flushleft}
+\noindent \textbf{Determination of Active and Passive Elements:}
+\end{flushleft}
+\begin{itemize}
+    \item Typically, in basic circuits involving only resistors and sources:
+    \item Voltage sources (like Vs) are considered active elements because they supply power.
+    \item Resistors (like R1 and R2) are considered passive elements because they dissipate or consume power.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{images/photo1695213539.jpeg}
+    \caption{Task 2 simple circuit with resistors in series for voltage calculation and  circuit with resistors in parallel for voltage calculation} % Add caption if required.
+\end{figure}
+
+
+\begin{flushleft}
+\section*{Task 2 (Ohm’s law and its application):}
+\end{flushleft}
+\textbf{Given:}
+\begin{align*}
+R_1 &= 1\text{k}\Omega \\
+R_2 &= 1\text{k}\Omega \\
+V_s &= 10\text{V}
+\end{align*}
+\begin{flushleft}
+\subsection*{Series Configuration}
+\end{flushleft}
+If \( R_1 \) and \( R_2 \) are in series:
+\begin{align}
+R_{\text{total}} &= R_1 + R_2 \\
+I &= \frac{V_s}{R_{\text{total}}} \\
+V_{R1} &= I \times R_1 \\
+V_{R2} &= I \times R_2
+\end{align}
+
+Substituting the given values:
+\begin{align*}
+R_{\text{total}} &= 2\text{k}\Omega \\
+I &= 5\text{mA} \\
+V_{R1} &= V_{R2} = 5\text{V}
+\end{align*}
+\begin{flushleft}
+\subsection*{Parallel Configuration}
+\end{flushleft}
+If \( R_1 \) and \( R_2 \) are in parallel:
+\begin{align}
+\frac{1}{R_{\text{total}}} &= \frac{1}{R_1} + \frac{1}{R_2} \\
+I &= \frac{V_s}{R_{\text{total}}} \\
+V_{R1} &= V_s \\
+V_{R2} &= V_s
+\end{align}
+
+Substituting the given values:
+\begin{align*}
+R_{\text{total}} &= 0.5\text{k}\Omega \\
+I &= 20\text{mA} \\
+V_{R1} &= V_{R2} = 10\text{V}
+\end{align*}
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{flushleft}
+\section*{Circuit Analysis Using KCL \& KVL}
+\end{flushleft}
+\textbf{Given:}
+\begin{align*}
+R_1 &= 100\text{k}\Omega \\
+R_2 &= 200\text{k}\Omega \\
+R_3 &= 300\text{k}\Omega \\
+V_s &= 10\text{V}
+\end{align*}
+\begin{flushleft}
+\subsection*{Equivalent Resistance for \( R_2 \) and \( R_3 \)}
+\begin{flushleft}
+\begin{equation}
+\frac{1}{R_{2\_3}} = \frac{1}{R_2} + \frac{1}{R_3}
+\end{equation}
+This implies:
+\begin{align*}
+\frac{1}{R_{2\_3}} &= \frac{1}{200\text{k}\Omega} + \frac{1}{300\text{k}\Omega} \\
+R_{2\_3} &= \frac{1}{\frac{1}{200} + \frac{1}{300}} \\
+R_{2\_3} &= 120\text{k}\Omega
+\end{align*}
+\begin{flushleft}
+\subsection*{Total Resistance of the Circuit}
+\end{flushleft}
+\begin{align*}
+R_{\text{total}} &= R_1 + R_{2\_3} \\
+R_{\text{total}} &= 100\text{k}\Omega + 120\text{k}\Omega \\
+R_{\text{total}} &= 220\text{k}\Omega
+\end{align*}
+\begin{flushleft}
+\subsection*{Using Ohm's Law to Determine Current through \( R_1 \)}
+\end{flushleft}
+\begin{align*}
+I_{R1} &= \frac{V_s}{R_{\text{total}}} \\
+I_{R1} &= \frac{10\text{V}}{220\text{k}\Omega} \\
+I_{R1} &= 45.45\mu\text{A}
+\end{align*}
+\begin{flushleft}
+\subsection*{Voltage Across the Parallel Combination of \( R_2 \) and \( R_3 \)}
+\end{flushleft}
+\begin{align*}
+V_{R2\_3} &= I_{R1} \times R_{2\_3} \\
+V_{R2\_3} &= 45.45\mu\text{A} \times 120\text{k}\Omega \\
+V_{R2\_3} &= 5.45\text{V}
+\end{align*}
+
+Since \( R_2 \) and \( R_3 \) are in parallel,
+\begin{flushleft}
+\subsection*{Currents through the Resistors \( R_2 \) and \( R_3 \)}
+\end{flushleft}
+Given that the voltage across \( R_2 \) and \( R_3 \) is the same:
+
+\begin{align*}
+V_{R2} &= V_{R2\_3} = 5.45\text{V} \\
+V_{R3} &= V_{R2\_3} = 5.45\text{V}
+\end{align*}
+
+Using Ohm's law:
+
+\begin{align*}
+I_{R2} &= \frac{V_{R2}}{R_2} \\
+I_{R2} &= \frac{5.45\text{V}}{200\text{k}\Omega} \\
+I_{R2} &= 27.25\mu\text{A}
+\end{align*}
+
+\begin{align*}
+I_{R3} &= \frac{V_{R3}}{R_3} \\
+I_{R3} &= \frac{5.45\text{V}}{300\text{k}\Omega} \\
+I_{R3} &= 18.17\mu\text{A}
+\end{align*}
+\begin{flushleft}
+\subsection*{Verification Using Kirchhoff's Current Law}
+\end{flushleft}
+
+The sum of the currents \( I_{R2} \) and \( I_{R3} \) should equal \( I_{R1} \):
+
+\begin{align*}
+I_{R1} &= I_{R2} + I_{R3} \\
+45.45\mu\text{A} &= 27.25\mu\text{A} + 18.17\mu\text{A}
+\end{align*}
+
+\noindent \textbf{Table 1}
+
+ Task 3 measurement table for problem a
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        V_s & V_R_1 & V_R_2 & I_R_1 & I_R_2 \\
+        \hline
+        3V  & 1.5V & 1.5V & 1.5A & 1.5A  \\
+        \hline
+        7V & 3.5V & 3.5V & 3.5A & 3.5A  \\
+        \hline
+        10V & 5V & 5V & 5A & 5A  \\
+        \hline
+        15V & 7.5V & 7.5V & 7.5A & 7.5A   \\
+        \hline
+        
+    \end{tabular}
+    \caption{Task 2 table}
+    \label{tab:sample_table}
+\end{table}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{images/photo1695213554.jpeg}
+    \caption{Task 3 circuit with resistors in parallel  } % Add caption if required.
+\end{figure}
+
+\noindent \textbf{Table 2.}
+
+
+Task 3 measurement table for problem b
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        R1 & 1k\Omega & 10k\Omega & 20k\Omega & 50k\Omega & 100k\Omega & 200k\Omega & 300k\Omega & 500k\Omega & 1M\Omega \\
+        \hline
+        V_s = 5V  & 13.19 & 12.231 & 1.151 & 2.161 & 3.002 & 3.742 & 4.077 & 4.077 & 4.658  \\
+        \hline
+        V_s = 10V & 0.15 & 1.307 & 2.303 & 4.323 & 6.004 & 7.483 & 8.154 & 8.793 & 9.316  \\
+        \hline
+        V_s = 15V & 0.225 & 1.961 & 3.454 & 6.484 & 9.005 & 11.225 & 12.231 & 13.19 & 13.976 \\
+        \hline
+
+    \end{tabular}
+    \caption{Task 2 table}
+    \label{tab:sample_table}
+\end{table}
+\begin{flushleft}
+\textbf{Conclusion:}
+During this laboratory work, we researched the foundational principles of Ohm's Law and its various applications in circuit analysis. We constructed and analyzed several circuits, meticulously measuring the voltage, current, and resistance in each configuration. Our empirical observations solidly reaffirmed the theoretical expectations derived from Ohm's Law. In conclusion, this laboratory session reinforced our understanding of fundamental electrical concepts and allowed us to gain hands-on experience in circuit design and analysis using both traditional methods and modern simulation tools.
+\end{flushleft}
+
+\begin{flushleft}
+\textbf{REFERENCE:}  
+1. ELECTRIC CIRCUITS LABORATORY MANUAL (ECE-235 LAB). (n.d).
+2. Alexander, C.K. Sadiku M.N.O, & Sadiku, A. (n.d). Electric circuits Fifth Edition. www.mhhe.com\alexander
+\end{flushleft}
+\end{flushleft}
+
+\end{document}
